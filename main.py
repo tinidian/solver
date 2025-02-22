@@ -1,10 +1,10 @@
-from window import Window, Line, Point
+from window import Window, Line, Point, Cell
 
 def main():
     win = Window(800, 600)
 
-    line1 = Line(Point(1, 100), Point(100, 200))
-    win.draw_line(line1, "red")
+    c = Cell(win)
+    c.draw(50, 50, 100, 100)
     win.wait_for_close()
 
 main()
